@@ -1,0 +1,16 @@
+execution_env=local
+#execution_env=remote
+appURL1=https://the-internet.herokuapp.com/
+email=Admin
+password=admin123
+product=iphone
+
+FName=reyan
+MName=Davan
+LName=Sonia
+EMPID=356356
+Lexpiry=2025-24-10
+DateOfBirth=2000-10-09
+
+un=admin
+pw=admin
