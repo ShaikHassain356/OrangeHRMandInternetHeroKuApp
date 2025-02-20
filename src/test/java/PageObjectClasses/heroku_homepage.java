@@ -23,6 +23,9 @@ public class heroku_homepage extends BaseClass {
     @FindBy(xpath = "//a[normalize-space()='Drag and Drop']")
     WebElement draganddrop;
 
+    @FindBy(xpath = "//a[normalize-space()='Dynamic Controls']")
+    WebElement dynamiccontrols;
+
     public void clickaddorremoveelement()
     {
         addorremoveelement.click();
@@ -41,6 +44,11 @@ public class heroku_homepage extends BaseClass {
     public void clickdraganddrop()
     {
         draganddrop.click();
+    }
+
+    public void clickdynamiccontrols()
+    {
+        dynamiccontrols.click();
     }
 
 

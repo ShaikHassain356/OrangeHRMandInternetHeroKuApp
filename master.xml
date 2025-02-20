@@ -11,10 +11,7 @@
         <parameter name="os" value="windows"/>
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="TestCases.TC001_addorremoveelement"/>
-            <class name="TestCases.TC002_BasicAuth"/>
-            <class name="TestCases.TC003_contextmenu"/>
-            <class name="TestCases.TC004_draganddrop"/>
+            <class name="TestCases.TC005_DynamicControls"/>
         </classes>
     </test>
 

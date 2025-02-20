@@ -9,14 +9,14 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="TestCases.TC002_BasicAuth">
+      <class name="TestCases.TC005_DynamicControls">
         <methods>
           <include name="close"/>
           <include name="setup"/>
-          <include name="checkingbasicauth"/>
+          <include name="handlingdynamiccontrols"/>
           <include name="sendEmail"/>
         </methods>
-      </class> <!-- TestCases.TC002_BasicAuth -->
+      </class> <!-- TestCases.TC005_DynamicControls -->
     </classes>
   </test> <!-- firefox-test(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
