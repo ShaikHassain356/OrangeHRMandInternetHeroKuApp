@@ -26,6 +26,15 @@ public class heroku_homepage extends BaseClass {
     @FindBy(xpath = "//a[normalize-space()='Dynamic Controls']")
     WebElement dynamiccontrols;
 
+    @FindBy(xpath = "//a[normalize-space()='Entry Ad']")
+    WebElement entryadd;
+
+    @FindBy(xpath = "//a[normalize-space()='Exit Intent']")
+    WebElement exitintent;
+
+    @FindBy(xpath = "//a[normalize-space()='File Download']")
+    WebElement filedownload;
+
     public void clickaddorremoveelement()
     {
         addorremoveelement.click();
@@ -50,6 +59,23 @@ public class heroku_homepage extends BaseClass {
     {
         dynamiccontrols.click();
     }
+
+    public void clickentryadd()
+    {
+        entryadd.click();
+    }
+
+    public void clickexitintent()
+    {
+        exitintent.click();
+    }
+
+    public void clickfiledownload()
+    {
+        filedownload.click();
+    }
+
+
 
 
 }

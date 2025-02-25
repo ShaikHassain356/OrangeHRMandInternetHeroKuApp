@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="tests">
+<suite name="All Test Suite">
 
     <listeners>
         <listener class-name="Utilities.ExtentReportManager"/>
@@ -11,7 +11,7 @@
         <parameter name="os" value="windows"/>
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="TestCases.TC005_DynamicControls"/>
+            <class name="TestCases.TC008_FileDownloader"/>
         </classes>
     </test>
 
