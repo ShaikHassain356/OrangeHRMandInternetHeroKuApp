@@ -9,14 +9,14 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="TestCases.TC007_ExitIntent">
+      <class name="TestCases.TC010_FileUploaderUsingRobotClass">
         <methods>
           <include name="close"/>
           <include name="setup"/>
-          <include name="handlingexitintent"/>
           <include name="sendEmail"/>
+          <include name="handlingfileuploaderusingrobotclass"/>
         </methods>
-      </class> <!-- TestCases.TC007_ExitIntent -->
+      </class> <!-- TestCases.TC010_FileUploaderUsingRobotClass -->
     </classes>
   </test> <!-- firefox-test(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

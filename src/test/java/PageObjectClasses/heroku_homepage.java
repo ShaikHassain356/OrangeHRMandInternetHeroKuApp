@@ -35,6 +35,12 @@ public class heroku_homepage extends BaseClass {
     @FindBy(xpath = "//a[normalize-space()='File Download']")
     WebElement filedownload;
 
+    @FindBy(xpath = "//a[normalize-space()='File Upload']")
+    WebElement fileupload;
+
+    @FindBy(xpath = "//a[normalize-space()='Horizontal Slider']")
+    WebElement horizontalslider;
+
     public void clickaddorremoveelement()
     {
         addorremoveelement.click();
@@ -73,6 +79,16 @@ public class heroku_homepage extends BaseClass {
     public void clickfiledownload()
     {
         filedownload.click();
+    }
+
+    public void clickfileupload()
+    {
+        fileupload.click();
+    }
+
+    public void clickhorizontalslider()
+    {
+        horizontalslider.click();
     }
 
 
