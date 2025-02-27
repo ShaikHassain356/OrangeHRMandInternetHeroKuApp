@@ -41,6 +41,15 @@ public class heroku_homepage extends BaseClass {
     @FindBy(xpath = "//a[normalize-space()='Horizontal Slider']")
     WebElement horizontalslider;
 
+    @FindBy(xpath = "//a[normalize-space()='Hovers']")
+    WebElement hovers;
+
+    @FindBy(xpath = "//a[normalize-space()='Infinite Scroll']")
+    WebElement infinitescroll;
+
+    @FindBy(xpath = "//a[normalize-space()='Inputs']")
+    WebElement inputs;
+
     public void clickaddorremoveelement()
     {
         addorremoveelement.click();
@@ -90,6 +99,21 @@ public class heroku_homepage extends BaseClass {
     {
         horizontalslider.click();
     }
+
+    public void clickhover(){
+        hovers.click();
+    }
+
+    public void clickinfinitescroll()
+    {
+        infinitescroll.click();
+    }
+
+    public void clickinputs()
+    {
+        inputs.click();
+    }
+
 
 
 

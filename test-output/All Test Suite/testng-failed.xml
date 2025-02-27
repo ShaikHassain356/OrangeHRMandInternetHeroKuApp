@@ -9,14 +9,14 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="TestCases.TC010_FileUploaderUsingRobotClass">
+      <class name="TestCases.TC014_Inputs">
         <methods>
           <include name="close"/>
+          <include name="handlinginputs"/>
           <include name="setup"/>
           <include name="sendEmail"/>
-          <include name="handlingfileuploaderusingrobotclass"/>
         </methods>
-      </class> <!-- TestCases.TC010_FileUploaderUsingRobotClass -->
+      </class> <!-- TestCases.TC014_Inputs -->
     </classes>
   </test> <!-- firefox-test(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->
