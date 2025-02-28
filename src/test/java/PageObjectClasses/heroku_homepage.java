@@ -50,6 +50,12 @@ public class heroku_homepage extends BaseClass {
     @FindBy(xpath = "//a[normalize-space()='Inputs']")
     WebElement inputs;
 
+    @FindBy(xpath = "//a[normalize-space()='JavaScript Alerts']")
+    WebElement alerts;
+
+    @FindBy(xpath = "//a[normalize-space()='Key Presses']")
+    WebElement keypress;
+
     public void clickaddorremoveelement()
     {
         addorremoveelement.click();
@@ -114,8 +120,14 @@ public class heroku_homepage extends BaseClass {
         inputs.click();
     }
 
+    public void clickalerts()
+    {
+        alerts.click();
+    }
 
-
-
+    public void clickkeypress()
+    {
+        keypress.click();
+    }
 
 }
