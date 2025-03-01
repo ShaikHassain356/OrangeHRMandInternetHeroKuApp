@@ -1,6 +1,7 @@
 execution_env=local
 #execution_env=remote
-appURL1=https://the-internet.herokuapp.com/
+#appURL1=https://the-internet.herokuapp.com/
+appURL1=https://testautomationpractice.blogspot.com/
 email=Admin
 password=admin123
 product=iphone

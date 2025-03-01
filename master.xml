@@ -11,7 +11,7 @@
         <parameter name="os" value="windows"/>
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="TestCases.TC016_Keypress"/>
+            <class name="TestCases.TC016_PaginatedTable"/>
         </classes>
     </test>
 
