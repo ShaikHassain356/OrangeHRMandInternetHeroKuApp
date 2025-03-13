@@ -7,9 +7,17 @@
     <groupId>org.example</groupId>
     <artifactId>OrangeHRM</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.2</version>
+        <relativePath/><!-- Use the latest stable version -->
+    </parent>
 
     <build>
+
         <pluginManagement>
+
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -20,6 +28,24 @@
                         <source>21</source>  <!-- Change to 11 or 17 -->
                         <target>21</target>
                         <!-- put your configurations here -->
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.3.0</version>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <mainClass>com.example.demo.MainClass</mainClass>
+                            </manifest>
+                        </archive>
                     </configuration>
                 </plugin>
 
@@ -179,6 +205,43 @@
 
 
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>3.2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.36</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>3.4.3</version>
+        </dependency>
+
+
+
+
+
+
 
 
 
@@ -186,8 +249,8 @@
 
 
     <properties>
-        <maven.compiler.source>20</maven.compiler.source>
-        <maven.compiler.target>20</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

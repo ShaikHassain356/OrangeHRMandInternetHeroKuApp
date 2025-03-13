@@ -6,10 +6,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
-public class ParsingResponseBody {
+public class ParsingJSONResponse {
 
     //approach 1
 
@@ -26,6 +25,7 @@ public class ParsingResponseBody {
                 .body("book[2].title",equalTo("The Great Gatsby"));
     }
 
+    //approach 2
     @Test
     public void parsingresponseusingassertions()
     {

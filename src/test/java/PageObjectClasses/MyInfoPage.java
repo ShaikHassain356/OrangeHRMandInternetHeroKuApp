@@ -106,17 +106,17 @@ public class MyInfoPage extends BaseClass {
         licenseexpiry.sendKeys(license);
     }
 
-    public void selectingnationality()
+    /*public void selectingnationality()
     {
         Select nationalitydropdown=new Select(nationality);
         nationalitydropdown.selectByContainsVisibleText("American");
-    }
+    }*/
 
-    public void selectingmaritalstatus()
+    /*public void selectingmaritalstatus()
     {
         Select maritalstate=new Select(maritalstatus);
         maritalstate.selectByContainsVisibleText("Single");
-    }
+    }*/
 
     public void selectingDOB(String DOB2)
     {

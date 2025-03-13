@@ -1,0 +1,37 @@
+if we want to work on API server which will send response data in the form of JSON and XML we first isntall the
+node JS and then respective packages using npm commands in cmd
+
+for JSON
+npm install -g json-server run in cmd to download related packages
+
+copy the JSON data in notepad and save the file as filename.json
+if we want to run the above file go to source folder and cmd
+run this cmd json-server filename.json  this will provide one local host url and we can
+work on that
+
+for XML
+npm install -g http-server  run in cmd to download related packages
+
+copy the XML data in notepad and save the file as filename.xml
+if we want to run the above file go to source folder and cmd
+run this cmd http-server -p 8080
+
+for starting spring and to upload file through API
+mvn clean package spring-boot:repackage -- This will repackage the JAR correctly with all dependencies.
+java -jar target/OrangeHRM-1.0-SNAPSHOT.jar
+we need to use this below curl
+curl -X POST -F "file=@/path/to/jan7.xlsx" -F "directory=uploads" http://localhost:8080/api/upload
+
+curl to upload single file
+curl -X POST "http://localhost:8080/api/upload-single" \
+  -H "Content-Type: multipart/form-data" \
+  -F "file=@/path/to/your/file.txt" \
+  -F "directory=uploads"
+
+curl to upload multiple files
+curl -X POST "http://localhost:8080/api/upload-multiple" \
+  -H "Content-Type: multipart/form-data" \
+  -F "files=@/path/to/your/file1.txt" \
+  -F "files=@/path/to/your/file2.txt" \
+  -F "directory=uploads"
+
