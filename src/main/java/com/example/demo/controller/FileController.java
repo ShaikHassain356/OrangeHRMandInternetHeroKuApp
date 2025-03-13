@@ -96,4 +96,28 @@ public class FileController {
                 + "</form>"
                 + "</body></html>";
     }
+    @GetMapping("/download")
+    public ResponseEntity<byte[]> downloadFile(@RequestParam("filename") String filename,
+                                               @RequestParam(value = "directory", required = false) String directory) {
+        try {
+            // Default directory if not provided
+            if (directory == null || directory.trim().isEmpty()) {
+                directory = "uploads";
+            }
+
+            Path filePath = Paths.get(directory).resolve(filename).toAbsolutePath().normalize();
+
+            if (!Files.exists(filePath)) {
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            }
+
+            byte[] fileBytes = Files.readAllBytes(filePath);
+            return ResponseEntity.ok()
+                    .header("Content-Disposition", "attachment; filename=" + filename)
+                    .body(fileBytes);
+        } catch (IOException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+        }
+    }
+
 }

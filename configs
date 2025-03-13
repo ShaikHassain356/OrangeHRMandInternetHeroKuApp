@@ -6,7 +6,7 @@ npm install -g json-server run in cmd to download related packages
 
 copy the JSON data in notepad and save the file as filename.json
 if we want to run the above file go to source folder and cmd
-run this cmd json-server filename.json  this will provide one local host url and we can
+run this cmd json-server filename.json  this will provide one local host url http://localhost:3000/store and we can
 work on that
 
 for XML
@@ -14,7 +14,8 @@ npm install -g http-server  run in cmd to download related packages
 
 copy the XML data in notepad and save the file as filename.xml
 if we want to run the above file go to source folder and cmd
-run this cmd http-server -p 8080
+run this cmd http-server -p 3000
+then we cas use this ul in browser  http://localhost:3000/agents.xml
 
 for starting spring and to upload file through API
 mvn clean package spring-boot:repackage -- This will repackage the JAR correctly with all dependencies.
