@@ -45,7 +45,7 @@ public class ParsingXMLResponse {
         String authorname = res.xmlPath().getString("root.store.book[0].author.text()");
         System.out.println("name of the author is "+authorname);
         Assert.assertEquals(authorname,"George Orwell");
-        XmlPath obj=new XmlPath(res.asString());
+
 
         //verifying whether specific author name is present or not in response
         for (int i=0;i<res.xmlPath().getList("root.store.book").size();i++)
@@ -58,6 +58,7 @@ public class ParsingXMLResponse {
         }
 
         //verifying whether specific author name is present or not in response using for each loop
+        XmlPath obj=new XmlPath(res.asString());
         List<String> author_names=  obj.getList("root.store.book.author");
         int index=0;
         for (String author_name :author_names)
