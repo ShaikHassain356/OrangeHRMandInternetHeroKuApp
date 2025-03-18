@@ -12,6 +12,10 @@ public class JsonSchemaValidation {
     public void jsonschemavalidation()
     {
 
+        //json object   {    }
+        //json array    [    ]
+        //json element   it can be json object or json array
+
         given()
 
                 .when().get("http://localhost:3000/store")
