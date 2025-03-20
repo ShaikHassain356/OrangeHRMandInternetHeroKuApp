@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="Utilities.ExtentReportManager"/>
+        <listener class-name="org.testng.reporters.FailedReporter"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="firefox-test">
+        <classes>
+            <class name="RestAssured.Chaining.createuser"/>
+            <class name="RestAssured.Chaining.getuser"/>
+            <class name="RestAssured.Chaining.updateuser"/>
+            <class name="RestAssured.Chaining.deleteuser"/>
+        </classes>
+    </test>
+
+</suite>
